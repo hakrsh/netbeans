@@ -3,7 +3,7 @@ MAINTAINER Harikrishnan U M <harikn77@gmail.com>
 ENV HOME /home/netbeans
 
 RUN adduser -D netbeans && \
-	  apk update && \
+    apk update && \
     apk add libxext libxtst libxrender curl && \
     rm -rf /tmp/* && \
     rm -rf /var/cache/apk/*
