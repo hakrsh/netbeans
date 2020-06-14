@@ -4,7 +4,10 @@ Apache Netbeans using Alpine Linux docker image
 ## To run container 
 ```bash
 xhost + 
-docker run -ti -d -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/NetbeansProjects:/home/netbeans/workspace/ harium/netbeans
+docker run -ti -d -e DISPLAY=$DISPLAY \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+-v ~/NetbeansProjects:/home/netbeans/workspace/ \
+harium/netbeans
 ```
 
 ## Dependencies for Running Locally
